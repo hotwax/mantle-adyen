@@ -26,7 +26,7 @@ along with this software (see the LICENSE.md file). If not, see
             hostedClientSideEncriptionToken="" cseLibraryLocation="" hmacKey=""/>
 
 
-    <moqui.security.UserGroup userGroupId="ADYEN_USERS" description="Clienteling App Users"/>
+    <moqui.security.UserGroup userGroupId="ADYEN_USERS" description="Adyen Users"/>
     <moqui.security.UserGroupMember userGroupId="ADYEN_USERS" userId="EX_JOHN_DOE" fromDate="1265184000000"/>
     <moqui.security.ArtifactGroup artifactGroupId="ADYENREST_API" description="ADYEN Rest API"/>
     <moqui.security.ArtifactGroupMember artifactGroupId="ADYENREST_API" artifactTypeEnumId="AT_REST_PATH"
