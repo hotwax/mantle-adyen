@@ -20,10 +20,10 @@ along with this software (see the LICENSE.md file). If not, see
             releaseServiceName="mantle.adyen.AdyenServices.release#Payment"
             refundServiceName="mantle.adyen.AdyenServices.refund#Payment"/>
 
-    <adyen.PaymentGatewayAdyen paymentGatewayConfigId="AdyenDemo" merchantAccount="HotwaxSoftwareECOM" username="ws@Company.HotwaxSoftware" password="Ee,&amp;b7xj{g8{pk9q)3MCQ]%c="
-            ApiKey="AQEphmfuXNWTK0Qc+iSYnXAvpvyoR41ZGpJYXQqAkOhQ8+QBO9Rx0j0sygEQwV1bDb7kfNy1WIxIIkxgBw==-AkiEihiReL/X0j8pmN0T812sUyYXaV9oEFb7ypFPTJc=-r7WY+c7vK?VSIz>^"
-            clientEncriptionKey="10001|D094EB447C550455DEAC2917771745FAADBE174D8B1A943506D44AFCF947D934ADF7FCB061F1F0B7FAF4B33358469810EB1CDB77FD159018062615956CB491FE19C80FB96B1110C24FB208C37BADBDCFCE7B0004AC520FF112045FEF7D26BABF7A93DCCFCD70C9ED464C3F5FD8832603C471D5290234B74345FAB2F82E5FD544C27C2E5739D67147B0FB8230840006DA221B7094DFBBD97B42BD2D4ABCC6D01B7A71AA074462AC1C5DD60F0402DEBD918713FB67E2576063CDEF22F775C19C7009B358639B8FD21E5A3E9733A315DBF8BAA5EDEAA44D45F040ED072339D774F6AE94AE572F0557C10B11BF4D5A28DBC131295CF974C90969E2A246BA9921D497"
-            hostedClientSideEncriptionToken="8016009238372004" cseLibraryLocation="https://test.adyen.com/hpp/cse/js/8016009238372004.shtml" hmacKey="98A81563854DA5E892DE29184DF649ADEEEDF4A4681E39D7E914B1B7816D4105"/>
+    <adyen.PaymentGatewayAdyen paymentGatewayConfigId="" merchantAccount="" username="" password=""
+            ApiKey=""
+            clientEncriptionKey=""
+            hostedClientSideEncriptionToken="" cseLibraryLocation="" hmacKey=""/>
 
 
     <moqui.security.UserGroup userGroupId="ADYEN_USERS" description="Clienteling App Users"/>
