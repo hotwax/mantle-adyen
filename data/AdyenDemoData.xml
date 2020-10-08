@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This software is in the public domain under CC0 1.0 Universal plus a
+Grant of Patent License.
+
+To the extent possible under law, the author(s) have dedicated all
+copyright and related and neighboring rights to this software to the
+public domain worldwide. This software is distributed without any
+warranty.
+
+You should have received a copy of the CC0 Public Domain Dedication
+along with this software (see the LICENSE.md file). If not, see
+<http://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<entity-facade-xml type="demo">
+    <mantle.account.method.PaymentGatewayConfig paymentGatewayConfigId="AdyenDemo" paymentGatewayTypeEnumId="PgtAdyen"
+            description="Adyen Demo"
+            authorizeServiceName="mantle.adyen.AdyenServices.authorize#Payment"
+            captureServiceName="mantle.adyen.AdyenServices.capture#Payment"
+            releaseServiceName="mantle.adyen.AdyenServices.release#Payment"
+            refundServiceName="mantle.adyen.AdyenServices.refund#Payment"/>
+
+    <adyen.PaymentGatewayAdyen paymentGatewayConfigId="" merchantAccount="" username="" password=""
+            ApiKey=""
+            clientEncriptionKey=""
+            hostedClientSideEncriptionToken="" cseLibraryLocation="" hmacKey=""/>
+
+
+    <moqui.security.UserGroup userGroupId="ADYEN_USERS" description="Adyen Users"/>
+    <moqui.security.UserGroupMember userGroupId="ADYEN_USERS" userId="EX_JOHN_DOE" fromDate="1265184000000"/>
+    <moqui.security.ArtifactGroup artifactGroupId="ADYENREST_API" description="ADYEN Rest API"/>
+    <moqui.security.ArtifactGroupMember artifactGroupId="ADYENREST_API" artifactTypeEnumId="AT_REST_PATH"
+                                        inheritAuthz="Y" artifactName="/adyen"/>
+    <moqui.security.ArtifactAuthz artifactAuthzId="ADYENREST_API_ALL" userGroupId="ADYEN_USERS" artifactGroupId="ADYENREST_API"
+                                  authzTypeEnumId="AUTHZT_ALWAYS" authzActionEnumId="AUTHZA_ALL"/>
+    
+</entity-facade-xml>
